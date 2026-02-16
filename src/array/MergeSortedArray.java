@@ -10,9 +10,7 @@ public class MergeSortedArray {
         int m = 3;
 
         for(int i=0; i<nums1.length; i++){
-            if(nums1[i] == 0){
 
-            }
         }
 
     }
