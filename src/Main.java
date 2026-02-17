@@ -1,23 +1,21 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        int[] arr = {10, 20, 700, 30, 40, 50, 600};
+      int[] arr = {2, 6, 1, 4, 5};
 
-        int max = Integer.MIN_VALUE;
-        int min = Integer.MAX_VALUE;
+      int left=2, right =4;
 
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] > max) {
-                max = arr[i];
-            }
-            if (arr[i] < min) {
-                min = arr[i];
-            }
-        }
+      for(int i = 1; i < arr.length; i++){
+          arr[i] = arr[i - 1] + arr[i];
+      }
 
-        System.out.println("maximum: " + max);
-        System.out.println("minimum: " + min);
+      int sum;
 
+      if(left == 0){
+          sum = arr[right];
+      }else {
+          sum = arr[right] - arr[left -1 ];
+      }
+
+        System.out.println(sum);
     }
 }

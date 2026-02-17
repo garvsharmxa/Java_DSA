@@ -8,6 +8,7 @@ public class MergeSortedArray {
         int[] nums2 = {2, 5, 6};
         int n = 3;
         int m = 3;
+        int right = m + n -1;
 
         for(int i=0; i<nums1.length; i++){
 
